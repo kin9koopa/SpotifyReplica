@@ -1,0 +1,248 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	font-family: 'Varela Round', sans-serif;
+}
+/* header css */
+header {
+	background: #000;
+	color: white;
+	font-size: 16px;
+	min-height: 56px;
+}
+header #nav-mobile {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px;
+}
+header #nav-desktop {
+	display: none;
+}
+header #nav-mobile .group {
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	width: 23%;
+}
+header .group .fa-spotify {
+	align-items: center;
+	display: flex;
+	font-size: 20px;
+	font-weight: 700;
+}
+header .group .fa-spotify:before {
+	font-size: 30px;
+	font-weight: 400;
+}
+header .group span {
+	color: white;
+	font-size: 10px;
+}
+header .group img {
+	border-radius: 50%;
+	scale: 0.7;
+}
+
+header #nav-mobile .group i.fa.fa-bars {
+	font-size: 25px;
+}
+/* end of header css */
+/* section blue */
+#sct-blue {
+	align-items: flex-start;
+	color: white;
+	background: #1d75de;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	line-height: 1.2;
+	min-height: 480px;
+	padding-left: 5%;
+}
+#sct-blue h1 {
+	font-size: 28px;
+	font-weight: 900;
+}
+#sct-blue h2 {
+	font-size: 18px;
+	margin-top: 30px;
+}
+#sct-blue .btns {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 20px 0;
+	min-height: 114px;
+	width: 100%;
+}
+#sct-blue .btns button {
+	border-radius: 25px;
+	display: block;
+	min-height: 52px;
+	width: 90%;
+}
+#sct-blue .btns button:nth-child(1) {
+	border: 2px solid #191414;
+	background: #191414;
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+#sct-blue .btns button:nth-child(2) {
+	border: 2px solid white;
+	background: #1d75de;
+	color: white;
+}
+#sct-blue a {
+	color: white;
+	font-size: 12px;
+}
+/* end of section blue */
+/* start of why section */
+
+#sct-why {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	min-height: 650px;
+	padding: 40px 0;
+}
+#sct-why h2 {
+	align-self: center;
+	font-size: 28px;
+	font-weight: 900;
+}
+#sct-why .icon-row {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#sct-why .icon-row .box {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	min-height: 142px;
+	padding-bottom: 10px;
+}
+#sct-why .icon-row .box img {
+	width: 142px;
+	height: 142px;
+	scale: 0.8;
+}
+#sct-why .icon-row .box .sub-titles {
+	padding-left: 15px;
+}
+#sct-why .icon-row .box h3 {
+	font-size: 21px;
+	font-weight: 800;
+	padding-bottom: 20px;
+}
+#sct-why .icon-row .box span {
+	font-size: 16px;
+}
+
+/* end of why section */
+
+@media all and (min-width: 768px) {
+	#sct-blue {
+		background: #1d75de;
+	}
+	#sct-blue .container {
+		margin: 0 auto;
+		width: 97%;
+	}
+	#sct-blue h1 {
+		font-size: 40px;
+	}
+	#sct-blue h2 {
+		font-size: 24px;
+		font-weight: 900;
+	}
+	#sct-blue .btns {
+		align-items: center;
+		flex-direction: row;
+		justify-content: center;
+		width: 325px;
+	}
+	#sct-blue .btns button:nth-child(1) {
+		margin-right: 10px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	/* why scts */
+	#sct-why {
+		min-height: 500px;
+	}
+	#sct-why .icon-row {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#sct-why .icon-row .box {
+		width: 50%;
+	}
+	#sct-why h2 {
+		font-size: 40px;
+	}
+	/* why scts */
+}
+
+@media all and (min-width: 992px) {
+	/* header css */
+	header #nav-mobile {
+		display: none;
+	}
+
+	header #nav-desktop {
+		align-items: center;
+		display: flex;
+		min-height: 80px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+	header #nav-desktop .group {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		width: 60%;
+	}
+	header .group .fa-spotify {
+		font-size: 30px;
+	}
+	header .group .fa-spotify:before {
+		font-size: 50px;
+	}
+	header #nav-desktop .group a {
+		color: white;
+		font-weight: 700;
+		text-decoration: none;
+	}
+	header .group img {
+		scale: 0.9;
+	}
+	header #nav-desktop .group a .fa {
+		margin-left: 10px;
+	}
+	/* end of header css */
+}
+@media all and (min-width: 1200px) {
+	/* header css */
+	#nav-desktop {
+		width: 90%;
+	}
+	/* end of header css */
+}
+@media all and (min-width: 1400px) {
+	/* header css */
+	#nav-desktop {
+		width: 65%;
+	}
+	/* end of header css */
+	#sct-blue .container {
+		width: 70%;
+	}
+}
