@@ -263,6 +263,9 @@ hr {
 
 footer {
 	background: #000;
+}
+
+footer .main-footer {
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -270,46 +273,45 @@ footer {
 	padding-top: 30px;
 }
 
-footer .logo {
+footer .main-footer .logo {
 	font-size: 24px;
 	font-weight: 700;
 	margin: 20px 0;
 	padding: 20px 0;
 }
-footer .logo .fa-spotify {
+footer .main-footer .logo .fa-spotify {
 	font-size: 30px;
 }
 
-footer .list {
+footer .main-footer .list {
 	display: flex;
 	flex-direction: column;
 	font-size: 16px;
 	padding: 3px 0 15px;
 }
-footer .list li {
+footer .main-footer .list li {
 	line-height: 1.5;
 	padding: 3px 0 15px;
 }
-footer .list li:last-child {
+footer .main-footer .list li:last-child {
 	margin-bottom: 30px;
 }
-footer .list .list-title {
+footer .main-footer .list .list-title {
 	color: #919496;
 	font-size: 12px;
 }
-footer .socials {
+footer .main-footer .socials {
 	display: flex;
 	justify-content: flex-start;
 	font-size: 30px;
 	margin-bottom: 10px;
 }
-footer .socials .fa {
+footer .main-footer .socials .fa {
 	margin-bottom: 30px;
 	margin: 20px;
 }
 footer .small {
 	color: #757575;
-
 	display: flex;
 	font-size: 10px;
 	justify-content: space-between;
@@ -375,9 +377,23 @@ footer .small ul li {
 	}
 	/* why scts */
 	/* footer */
-	footer {
-		align-items: flex-start;
+	footer .main-footer {
 		justify-content: space-between;
+		width: 80%;
+	}
+	footer {
+		padding-left: 10%;
+	}
+	footer .group-links {
+		align-items: flex-start;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 98%;
+		padding-right: 20px;
+	}
+	footer .small {
+		width: 80%;
 	}
 	/* end footer */
 }
@@ -398,7 +414,7 @@ footer .small ul li {
 	header #nav-desktop .group {
 		align-items: center;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		width: 60%;
 	}
 	header .group .fa-spotify {
@@ -424,6 +440,12 @@ footer .small ul li {
 		padding-left: 20px;
 	}
 	/* end sct why */
+	/* footer */
+	footer .main-footer {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	/* end of footer */
 }
 @media all and (min-width: 1200px) {
 	/* header css */
