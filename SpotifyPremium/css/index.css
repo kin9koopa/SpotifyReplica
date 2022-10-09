@@ -414,9 +414,10 @@ footer .small ul li {
 	header #nav-desktop .group {
 		align-items: center;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		width: 60%;
 	}
+
 	header .group .fa-spotify {
 		font-size: 30px;
 	}
