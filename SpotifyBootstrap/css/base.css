@@ -1,0 +1,157 @@
+@charset "UTF-8";
+.bg-black {
+  background: #000;
+  color: #fff;
+}
+
+.navbar {
+  padding: 1% 10%;
+}
+.navbar img {
+  border-radius: 50%;
+}
+
+#sct-blue {
+  background: #1D75DE;
+  color: #fff;
+  padding: 5% 10%;
+}
+#sct-blue h1 {
+  font-size: 28px;
+}
+#sct-blue h2 {
+  font-size: 18px;
+}
+#sct-blue .row {
+  gap: 10px;
+}
+#sct-blue .row .btn {
+  border-radius: 24px;
+}
+#sct-blue a {
+  color: #fff;
+  font-size: 12px;
+}
+
+#sct-why {
+  padding: 5% 10%;
+}
+#sct-why h1 {
+  font-size: 28px;
+  padding: 20px;
+}
+#sct-why .icons img {
+  flex-grow: 1;
+  max-height: 142px;
+  scale: 0.8;
+  max-width: 142px;
+}
+#sct-why .icons .col-12 {
+  align-items: center;
+  display: flex;
+}
+
+#sct-premium {
+  background: #EFEFEF;
+  padding: 5% 10%;
+}
+#sct-premium h1 {
+  font-size: 32px;
+}
+#sct-premium h2 {
+  font-size: 16px;
+}
+#sct-premium .payments {
+  padding-bottom: 20px;
+}
+#sct-premium .card {
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#sct-premium .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 348px;
+}
+#sct-premium ul {
+  list-style: none;
+  padding: 0;
+  min-height: 168px;
+}
+#sct-premium ul li:before {
+  content: "✓";
+}
+#sct-premium .sct-button {
+  display: flex;
+  flex-direction: column;
+  max-height: 62px;
+}
+#sct-premium .sct-button span, #sct-premium .sct-button a {
+  font-size: 12px;
+}
+
+footer {
+  padding: 5% 10%;
+}
+
+#sct-footer .sct-footer {
+  display: flex;
+  flex-direction: column;
+}
+#sct-footer .fa-spotify {
+  padding: 20px 0;
+}
+#sct-footer .menu-items ul {
+  list-style: none;
+}
+#sct-footer .menu-items ul li {
+  padding: 10px;
+}
+#sct-footer .menu-items ul li:first-child {
+  color: #8F8F8F;
+  padding-bottom: 20px;
+}
+#sct-footer .menu-items ul li:last-child {
+  padding-bottom: 30px;
+}
+#sct-footer .social {
+  font-size: 2rem;
+}
+#sct-footer .fa-globe {
+  font-size: 10px;
+}
+#sct-footer .small-font {
+  font-size: 10px;
+  gap: 20px;
+}
+#sct-footer .small-font .col-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  #sct-why .icons .col {
+    align-items: center;
+    display: flex;
+  }
+  #sct-premium .card-body {
+    min-height: 550px;
+  }
+}
+@media (min-width: 1200px) {
+  #sct-why .icons .col-md-6 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #sct-premium {
+    align-items: center;
+  }
+  #sct-premium h1 {
+    font-size: 40px;
+  }
+  .sct-footer {
+    display: flex;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=base.css.map */

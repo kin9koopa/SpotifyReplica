@@ -1,0 +1,129 @@
+.bg-black
+    background: $black
+    color: $white
+// header
+.navbar
+    padding: 1% 10%
+    img
+        border-radius: 50%
+// end header   
+// sct-blue
+#sct-blue
+    background: $light-blue
+    color: $white
+    padding: 5% 10%
+    h1
+        font-size: 28px
+    h2
+        font-size: 18px
+    .row
+        gap: 10px
+        .btn
+            border-radius: 24px
+    a
+        color: $white
+        font-size: 12px
+// end sct-blue
+//  sct-why
+#sct-why
+    padding: 5% 10%
+    h1
+        font-size: 28px
+        padding: 20px
+    .icons
+        img
+            flex-grow: 1
+            max-height: 142px
+            scale: .8
+            max-width: 142px
+        .col-12
+            align-items: center
+            display: flex
+// end sct-why
+// premium 
+#sct-premium
+    background: $bg-gray
+    padding: 5% 10%
+    h1
+        font-size: 32px
+    h2
+        font-size: 16px
+    .payments
+        padding-bottom: 20px
+    .card
+        border-radius: 18px
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+    .card-body
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        min-height: 348px
+    ul
+        list-style: none
+        padding: 0
+        min-height: 168px
+        li:before
+            content: '✓'
+    .sct-button
+        display: flex
+        flex-direction: column
+        max-height: 62px
+        span, a
+            font-size: 12px
+// end premium
+// footer
+footer
+    padding: 5% 10%
+#sct-footer
+    .sct-footer
+        display: flex
+        flex-direction: column
+    .fa-spotify
+        padding: 20px 0
+    .menu-items
+        ul
+            list-style: none
+            li
+                padding: 10px
+            li:first-child
+                color: $font-small
+                padding-bottom: 20px
+            li:last-child
+                padding-bottom: 30px
+    .social
+        font-size: 2rem
+    .fa-globe
+        font-size: 10px
+    .small-font
+        font-size: 10px
+        gap: 20px
+        .col-2
+            display: flex
+            justify-content: flex-end
+
+// end footer
+
+@media (min-width: 768px)
+    #sct-why
+        .icons
+            .col
+                align-items: center
+                display: flex
+    #sct-premium
+        .card-body
+            min-height: 550px                
+
+@media (min-width: 1200px)
+    #sct-why
+        .icons
+            .col-md-6
+                flex-direction: column
+                justify-content: center
+    #sct-premium
+            align-items: center
+            h1
+                    font-size: 40px
+    .sct-footer
+        display: flex
+        flex-direction: row
+    
